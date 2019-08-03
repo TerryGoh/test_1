@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script src="./js/app.js"></script>
+    <script src="./service-worker.js"></script>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            initServiceWorker() ;
+   
+            indexPage();
+        }
+
+    </script>
+</head>
+
+<body>
+    <textarea id="ta_message"></textarea><br>
+    <button id="btn_record">Record</button>
+    <br><br>
+    <table class="table" id="table_msg">
+        <tr>
+            <td>Date-Time</td>
+            <td>Log</td>
+        </tr>
+    </table>
+</body>
+
+</html>
